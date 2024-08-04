@@ -6,7 +6,7 @@ const RestaurantCard = (props) => {
   const { cloudinaryImageId, name, avgRating, cuisines, costForTwo, sla } =
     resData?.info;
 
-  return (
+  return <>
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
         className="res-logo"
@@ -19,7 +19,7 @@ const RestaurantCard = (props) => {
       <h4>{costForTwo}</h4>
       <h4>{sla?.slaString}</h4>
     </div>
-  );
+  </>;
 };
 
 export default RestaurantCard;

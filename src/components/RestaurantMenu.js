@@ -16,9 +16,7 @@ const RestaurantMenu = () => {
         const data = await fetch(MENU_API + resId);
         const json = await data.json();
         setRestaurantMenuData(json);
-        console.log(json)
     }
-    //json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards
     if (restaurantMenuData === null) return <Shimmer />
     const {text} = restaurantMenuData.data.cards[0].card.card;
     const {cuisines, costForTwoMessage} = restaurantMenuData.data.cards[2].card.card.info;

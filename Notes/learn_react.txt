@@ -1,0 +1,61 @@
+JSX - Javascript XML
+npm - npmjs.com
+
+-> npm init
+package.json ~ - major update also      ^ - minor update
+sometimes, packages are also known as dependencies. Package and dependencies
+are same things.
+-> npm init -y
+
+
+-> npm install -D parcel
+package-lock.json - Keeps track of exact version of each dependency
+transitive dependencies- dependencies of dependencies
+other examples of bundlers - webpack and vite
+
+delete node_modules and package-lock.json -> npm install and it works.
+
+
+-> npx parcel index.html
+npx means executing a package
+-> npx parcel <package-name>
+#################################
+Now, bringing React by npm
+
+-> npm i react
+-> npm install react-dom
+
+-> npx build parcel index.html
+The "main" field is meant for libraries. If 
+     you meant to output a .html file, either remove 
+     the "main" field or choose a different target 
+     name.
+
+https://browserslist.dev
+
+to learn to run a project, see the script section of package.json
+
+Shorthand commands- 
+
+1) npm run start / npm start
+2) npm run build
+
+
+
+dist:
+It keeps the files minified for us.
+
+
+
+########################################################
+props - properties
+passing a prop to component -- passing an argument to function
+
+Config driver ui
+
+
+
+########################################################
+
+default export, default import 
+named import and named export

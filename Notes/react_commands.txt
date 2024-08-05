@@ -1,0 +1,11 @@
+-> npm init
+-> npm init -y
+
+-> npm install -D parcel
+-> ntpx parcel index.html
+-> npm i react
+-> npm install react-dom
+-> npx build parcel index.html
+
+-> npm run start / npm start
+-> npm run build

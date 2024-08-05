@@ -12,7 +12,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   // Whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
-  console.log("Body Rendered");
+  // console.log("Body Rendered");
 
   useEffect(() => {
     fetchData();
@@ -22,13 +22,8 @@ const Body = () => {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.900965&lng=75.8572758"
     );
-
     const json = await data.json();
-    console.log(json); // Inspect the API response structure
-
-    // const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
     const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    console.log(restaurants)
     setListofRestaurants(restaurants);
     setFilteredRestaurants(restaurants);
   };

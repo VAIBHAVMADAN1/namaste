@@ -2,3 +2,5 @@
 /dist
 .parcel-cache
 .DS_Store
+User.js
+UserClass.js
